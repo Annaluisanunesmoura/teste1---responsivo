@@ -1,0 +1,83 @@
+/* 
+  Media Queries para Design Responsivo
+  Este arquivo contém estilos que se adaptam a diferentes tamanhos de tela
+*/
+
+/* Estilos para telas com largura mínima de 350px (dispositivos móveis) */
+@media screen and (min-width: 350px) {
+    body {
+        background: black; /* Fundo preto */
+    }
+    
+    .container {
+        gap: 5px; /* Espaço pequeno entre os itens */
+        display: flex;
+        flex-wrap: wrap-reverse; /* Itens quebram em ordem reversa */
+        justify-content: center; /* Centraliza os itens horizontalmente */     
+    }
+    
+    .titulo {
+        text-align: center; /* Texto centralizado */
+        color: aliceblue; /* Cor do texto aliceblue */
+    }
+    
+    img {
+        border-radius: 10%; /* Bordas arredondadas (10%) */
+        width: 370px; /* Largura fixa de 370px */
+    }
+}
+
+/* Estilos para telas com largura mínima de 808px (tablets) */
+@media screen and (min-width: 808px) {
+    body {
+        background: red; /* Fundo vermelho */
+    }
+    
+    .container {
+        gap: 10px; /* Espaço maior entre os itens */
+        display: flex;
+        flex-wrap: wrap-reverse; /* Itens quebram em ordem reversa */
+        justify-content: center; /* Centraliza os itens horizontalmente */     
+    }
+    
+    .titulo {
+        text-align: center; /* Texto centralizado */
+        color: aliceblue; /* Cor do texto aliceblue */
+    }
+    
+    img {
+        border-radius: 10%; /* Bordas arredondadas (10%) */
+        /* Largura da imagem não especificada (herda do elemento ou padrão) */
+    }
+}
+
+/* Estilos para telas com largura mínima de 1024px (desktops) */
+@media screen and (min-width: 1024px) {
+    .container {
+        gap: 70px; /* Espaço grande entre os itens */
+        display: flex;
+        flex-wrap: wrap-reverse; /* Itens quebram em ordem reversa */
+        justify-content: flex-start; /* Alinha itens no início do container */
+    }
+    
+    .box {
+        width: 20rem; /* Largura de 20 unidades rem */
+        height: 20rem; /* Altura de 20 unidades rem */
+        margin: 0 4em; /* Margem 0 no topo/baixo e 4em nas laterais */
+    }
+    
+    .titulo {
+        text-align: center; /* Texto centralizado */
+        color: aliceblue; /* Cor do texto aliceblue */
+    }
+    
+    body {
+        background: black; /* Fundo preto */
+    }
+    
+    img {
+        border-radius: 10%; /* Bordas arredondadas (10%) */
+        width: 500px; /* Largura fixa de 500px */
+        padding: 0 1em; /* Preenchimento 0 no topo/baixo e 1em nas laterais */
+    }
+}
